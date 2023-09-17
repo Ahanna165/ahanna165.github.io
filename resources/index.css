@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+
+html{
+    color: transparent;
+    font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+
+/* BANNER */
+.banner {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  margin-right: 0;
+  display: flex;
+}
+
+
+.hanna {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+ .hanna img {
+    height: auto;
+    width:100%;
+    padding-left: 0%;
+    padding-top: 0%;
+    object-fit: cover; 
+    transform: scaleX(-1);
+    opacity: 0.5;
+  }
+
+  header {
+    position: absolute; /* Set the parent container to relative positioning */
+    top: 50%;
+    right: 0%;
+    height: auto;
+    width: 40%; 
+  }
+
+  header h1 {
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    text-align: right;
+    font-size: 6rem;
+    font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+    color: magenta; /* Set the text color */
+    font-style: bold;
+    z-index: 3; /* Ensure the text appears above the image (higher z-index) */
+    display: flex;
+    transition: display 3s ease-in 3s;
+  }
+
+  header ul {
+    min-width: 130%;
+    height: 20rem;
+    transform: translate(-30%, -30%); /* Center the text both horizontally and vertically */
+    text-align: right;
+    font-size: 2.5rem;
+    font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+    color: #FFF; /* Set the text color */
+    background-color: magenta;
+    z-index: 3; /* Ensure the text appears above the image (higher z-index) */
+    display: none;
+    border-radius: 15px;
+    overflow: visible;
+    list-style-type: none;
+  }
+
+  header:hover h1 {
+    display: none;
+  }
+  header:hover ul {
+    display: block;
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: 1300px) {
+    /* Adjust styles for smaller screens */
+    header {
+      display: inline-flex;
+    }
+    
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1100px) {
+    /* Adjust styles for smaller screens */
+    header {
+      width: 30%;
+    }
+    
+    header h1 {
+      font-size: 4rem;
+    }
+  }
+
+
+
+/*.item h2{
+    color: magenta;
+    font-size: 2.5rem;
+}*/
+
+
+/* CHESSBOARD */
+nav {
+  position: absolute;
+  top: 45rem;
+  background-color: #FFF;
+  width: 100%;
+}
+
+.chessboard1, .chessboard3{
+    display: grid;
+    grid-template-columns: repeat(5, 20%); /* Adjust the size of the columns as needed */
+    grid-template-rows: repeat(1, 13rem); /* Adjust the size of the rows as needed */
+    /*gap: 10px; /* Adjust the gap between the fields as needed */
+    width: 100%; /* Adjust the total width of the chessboard */
+    height: auto;
+    text-align: center;
+  }
+
+  .chessboard2 {
+    display: grid;
+    grid-template-columns: repeat(5, 20%); 
+    grid-template-rows: repeat(1, 13rem); 
+    width: 100%; 
+    height: auto;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
+
+    .chessboard1 {
+      display: flex;
+      justify-content:space-between;
+      flex-grow: 1;
+    }
+    .chessboard2 {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+    .chessboard3 {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .field {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 100px;
+      padding: 2.5rem;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+  .chessboard1 {
+    display: block
+  }
+
+  .chessboard2 {
+    display: block
+  }
+
+  .chessboard3 {
+    display: block
+  }
+
+  .field {
+    padding: 1rem;
+  }
+}
+
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:  white;
+    text-decoration: overline;
+    background-color: rgba(192, 192, 190, 0.35); /* Adjust the background color of the fields as needed */
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    position: relative; /* Set position to allow z-index to work */
+    z-index: 2; /* Set a higher z-index to make the elements overlay */
+    overflow: hidden;
+  }
+
+  .field:hover {
+    background-color: magenta;
+    border-color: magenta;
+    color: rgb(255, 255, 255);
+  }
+
+
+  
+  .empty {
+    background-color: transparent; /* Set a transparent background */
+    pointer-events: none; /* Ignore pointer events for empty cells */
+  }
+
+
+
+  /* Styles for Contact Section */
+footer {
+  background-color: transparent; 
+  position: absolute;
+  top: 80rem;
+  width: 40%; 
+  height: auto; 
+  z-index: 1;
+  margin-right: 0;
+}
+
+.wordsfooter {
+  position: absolute; /* Set the parent container to relative positioning */
+  top: 20rem;
+  right: -150%;
+  height: auto;
+  width: 100%; /* Adjust the width of the banner as needed */
+  text-align: right; 
+  display: flex;
+}
+
+.wordsfooter h2 {
+  
+  height: auto;
+  transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  font-size: 7rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+  z-index: 3; /* Ensure the text appears above the image (higher z-index) */
+  
+  /*border: 3px dotted magenta; /* Add a border around the text */
+  /*padding: 1px; /* Add some padding inside the border */
+  /*border-radius: 20px;*/
+}
+
+.contacts {
+  background-color: transparent;
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  height: auto;
+  float: right;
+  margin-top: 30rem;
+  margin-bottom: 60rem;
+  margin-right: 0;
+}
+
+.contacts ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  color: magenta;
+  display: inline-flex;
+  margin-bottom: 12rem;
+}
+
+
+.button a {
+  border-radius: 4px;
+  color: magenta;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 150px;
+  padding: 20px;
+  border: 1px solid;
+  display: inline-block;
+}
+
+.button a:hover {
+  background-color: magenta;
+  border: 1px solid magenta;
+  color: #FFF;
+}
+
+
+li a {
+  list-style: none;
+  width:150px;
+  padding: 50px;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .hanna {
+    width: 100%;
+    /*display: none;*/
+  }
+
+}
+
+
+/* MODAL SECTION */
+
+#bg-modal1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+#modal-content1 {
+  width: 80%;
+  height: 90%;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  
+}
+
+#modal-content1 img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container width */
+  max-height: 80%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  position: absolute; /* Position the image relative to the container */
+  top: 55px; /* Position from the top edge of the container */
+  left: 0; /* Position from the left edge of the container */
+  bottom: 0; /* Position from the bottom edge of the container */
+  right: 0; /* Position from the right edge of the container */
+  margin: auto; 
+}
+
+#modal-content1 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+}
+
+/* MODAL SECTION 2 */
+
+#bg-modal2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+#modal-content2 {
+  width: 80%;
+  height: 90%;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  display: inline-flexbox;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+#modal-content2 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+}
+
+#modal-content2 img.rug {
+  max-width: 20%; /* Ensure the image doesn't exceed the container width */
+  max-height: 20%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+#modal-content2 img.boxen {
+  max-width: 20%; /* Ensure the image doesn't exceed the container width */
+  max-height: 20%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+#modal-content2 img.fleck {
+  max-width: 20%; /* Ensure the image doesn't exceed the container width */
+  max-height: 20%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+#modal-content2 img.turm {
+  max-width: 20%; /* Ensure the image doesn't exceed the container width */
+  max-height: 20%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+/* MODAL SECTION 3 */
+
+#bg-modal3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+#modal-content3 {
+  width: 80%;
+  height: 90%;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  
+}
+
+#modal-content3 img {
+  max-width: 30%; /* Ensure the image doesn't exceed the container width */
+  max-height: 30%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  position: absolute; /* Position the image relative to the container */
+  top: 55px; /* Position from the top edge of the container */
+  left: 0; /* Position from the left edge of the container */
+  bottom: 0; /* Position from the bottom edge of the container */
+  right: 0; /* Position from the right edge of the container */
+  margin: auto; 
+}
+
+#modal-content3 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+}
+
+
+/* MODAL SECTION4 */
+
+#bg-modal4 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+#modal-content4 {
+  width: 80%;
+  height: 90%;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  
+}
+
+#modal-content4 img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container width */
+  max-height: 80%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  position: absolute; /* Position the image relative to the container */
+  top: 55px; /* Position from the top edge of the container */
+  left: 0; /* Position from the left edge of the container */
+  bottom: 0; /* Position from the bottom edge of the container */
+  right: 0; /* Position from the right edge of the container */
+  margin: auto; 
+}
+
+#modal-content4 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+}
+
+
+
+.close1 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+
+.close2 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.close3 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.close4 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1rem;
+  cursor:pointer;
+}
