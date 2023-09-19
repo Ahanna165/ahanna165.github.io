@@ -28,15 +28,18 @@ body {
 
 
 .hanna {
-  width: 50%;
+  width: 40%;
   height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
 }
  .hanna img {
     height: auto;
     width:100%;
     padding-left: 0%;
-    padding-top: 0%;
+    padding-bottom: 0%;
     object-fit: cover; 
     transform: scaleX(-1);
     opacity: 0.5;
@@ -44,21 +47,22 @@ body {
 
   header {
     position: absolute; /* Set the parent container to relative positioning */
-    top: 50%;
     right: 0%;
-    height: auto;
+    transform: translateY(-50%);
     width: 40%; 
+    margin-top: 40%;
   }
 
   header h1 {
-    width: 100%;
+    min-width: 130%;
     height: auto;
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     text-align: right;
-    font-size: 6rem;
+    padding: 2rem;
+    font-size: 8vw;
     font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
     color: magenta; /* Set the text color */
-    font-style: bold;
+    font-weight: bold;
     z-index: 3; /* Ensure the text appears above the image (higher z-index) */
     display: flex;
     transition: display 3s ease-in 3s;
@@ -66,10 +70,11 @@ body {
 
   header ul {
     min-width: 130%;
-    height: 20rem;
+    height: 25vw;
     transform: translate(-30%, -30%); /* Center the text both horizontally and vertically */
     text-align: right;
-    font-size: 2.5rem;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
     font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
     color: #FFF; /* Set the text color */
     background-color: magenta;
@@ -87,31 +92,29 @@ body {
     display: block;
   }
 
-  @media only screen and (min-width: 1100px) and (max-width: 1300px) {
-    /* Adjust styles for smaller screens */
-    header {
-      display: inline-flex;
-    }
+  @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+   
     
   }
 
-  @media only screen and (min-width: 800px) and (max-width: 1100px) {
-    /* Adjust styles for smaller screens */
-    header {
-      width: 30%;
-    }
-    
-    header h1 {
-      font-size: 4rem;
-    }
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+  
+
   }
 
+  @media only screen and (min-width: 500px) and (max-width: 800px) {
+  
+    
+  }
 
+  @media only screen and (min-width: 200px) and (max-width: 500px) {
+    .hanna {
+      display: none;}
+    
+    
 
-/*.item h2{
-    color: magenta;
-    font-size: 2.5rem;
-}*/
+  }
+
 
 
 /* CHESSBOARD */
@@ -224,11 +227,12 @@ footer {
   width: 40%; 
   height: auto; 
   z-index: 1;
-  margin-right: 0;
+  display: flex;
+  padding: 20px;
 }
 
 .wordsfooter {
-  position: absolute; /* Set the parent container to relative positioning */
+  position: relative; /* Set the parent container to relative positioning */
   top: 20rem;
   right: -150%;
   height: auto;
@@ -241,7 +245,7 @@ footer {
   
   height: auto;
   transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
-  font-size: 7rem;
+  font-size: 7vw;
   font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
   color: magenta; /* Set the text color */
   font-style: bold;
@@ -262,6 +266,7 @@ footer {
   margin-top: 30rem;
   margin-bottom: 60rem;
   margin-right: 0;
+  display: flex;
 }
 
 .contacts ul {
@@ -299,13 +304,6 @@ li a {
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .hanna {
-    width: 100%;
-    /*display: none;*/
-  }
-
-}
 
 
 /* MODAL SECTION */
@@ -376,9 +374,10 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  display: inline-flexbox;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
-  justify-content: space-between; /* Distribute space between items */
+  display: flex;
+  flex-wrap:wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-around; /* Distribute space between items */
+  align-content: space-around;
 }
 
 #modal-content2 h1 {
@@ -391,40 +390,16 @@ li a {
   font-style: bold;
 }
 
-#modal-content2 img.rug {
-  max-width: 20%; /* Ensure the image doesn't exceed the container width */
-  max-height: 20%; /* Ensure the image doesn't exceed the container height */
-  width: auto; /* Automatically adjust the width based on height */
-  height: auto; /* Automatically adjust the height based on width */
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
-#modal-content2 img.boxen {
-  max-width: 20%; /* Ensure the image doesn't exceed the container width */
-  max-height: 20%; /* Ensure the image doesn't exceed the container height */
-  width: auto; /* Automatically adjust the width based on height */
-  height: auto; /* Automatically adjust the height based on width */
-  flex-wrap: wrap;
-  flex-grow: 2;
-}
-
-#modal-content2 img.fleck {
-  max-width: 20%; /* Ensure the image doesn't exceed the container width */
-  max-height: 20%; /* Ensure the image doesn't exceed the container height */
-  width: auto; /* Automatically adjust the width based on height */
-  height: auto; /* Automatically adjust the height based on width */
-  flex-wrap: wrap;
-  flex-grow: 2;
-}
-
+#modal-content2 img.rug,
+#modal-content2 img.boxen,
+#modal-content2 img.fleck,
 #modal-content2 img.turm {
-  max-width: 20%; /* Ensure the image doesn't exceed the container width */
-  max-height: 20%; /* Ensure the image doesn't exceed the container height */
+  flex-basis: 40%; /* Initial size: 50% of the container width */
+  max-width: 50%; /* Allow images to shrink if needed */
+  max-height: 40%; /* Allow images to shrink if needed */
   width: auto; /* Automatically adjust the width based on height */
   height: auto; /* Automatically adjust the height based on width */
-  flex-wrap: wrap;
-  flex-grow: 2;
+  object-fit: contain; /* Preserve aspect ratio */
 }
 
 /* MODAL SECTION 3 */
@@ -448,20 +423,17 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 
 #modal-content3 img {
-  max-width: 30%; /* Ensure the image doesn't exceed the container width */
-  max-height: 30%; /* Ensure the image doesn't exceed the container height */
-  width: auto; /* Automatically adjust the width based on height */
-  height: auto; /* Automatically adjust the height based on width */
-  position: absolute; /* Position the image relative to the container */
-  top: 55px; /* Position from the top edge of the container */
-  left: 0; /* Position from the left edge of the container */
-  bottom: 0; /* Position from the bottom edge of the container */
-  right: 0; /* Position from the right edge of the container */
-  margin: auto; 
+  max-width: 45%; 
+  margin-top: 100px; 
+  margin-left: 30px;
 }
 
 #modal-content3 h1 {
@@ -471,7 +443,7 @@ li a {
   font-size: 2rem;
   font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
   color: magenta; /* Set the text color */
-  font-style: bold;
+  font-weight: bold;
 }
 
 
