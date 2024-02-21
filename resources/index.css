@@ -41,7 +41,7 @@ body {
     padding-left: 0%;
     padding-bottom: 0%;
     object-fit: cover; 
-    transform: scaleX(-1);
+    /*transform: scaleX(-1);*/
     opacity: 0.5;
   }
 
@@ -58,6 +58,7 @@ body {
     height: auto;
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     text-align: right;
+    margin-top: 30%;
     padding: 2rem;
     font-size: 8vw;
     font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
@@ -390,17 +391,18 @@ li a {
   font-style: bold;
 }
 
+
 #modal-content2 img.rug,
 #modal-content2 img.boxen,
 #modal-content2 img.fleck,
 #modal-content2 img.turm {
-  flex-basis: 40%; /* Initial size: 50% of the container width */
-  max-width: 50%; /* Allow images to shrink if needed */
-  max-height: 40%; /* Allow images to shrink if needed */
-  width: auto; /* Automatically adjust the width based on height */
-  height: auto; /* Automatically adjust the height based on width */
-  object-fit: contain; /* Preserve aspect ratio */
-}
+  flex-basis: 40%;  
+  max-width: 50%;  
+  max-height: 40%; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain;} 
+
 
 /* MODAL SECTION 3 */
 
