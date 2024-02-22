@@ -123,6 +123,7 @@ nav {
   top: 115vh;
   background-color: #FFF;
   width: 100%;
+  hight: auto; /*new added*/
 }
 
 .chessboard1, .chessboard3{
@@ -223,12 +224,13 @@ nav {
 footer {
   background-color: transparent; 
   position: absolute;
-  top: 80rem;
+  top: 300vh;
   width: 40%; 
   height: auto; 
   z-index: 1;
   display: flex;
   padding: 20px;
+  
 }
 
 .wordsfooter {
