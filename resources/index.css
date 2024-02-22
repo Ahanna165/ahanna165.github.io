@@ -224,7 +224,7 @@ nav {
 footer {
   background-color: transparent; 
   position: absolute;
-  top: 300vh;
+  top: 200vh;
   width: 40%; 
   height: auto; 
   z-index: 1;
