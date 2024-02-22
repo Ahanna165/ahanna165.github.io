@@ -57,7 +57,7 @@ body {
     height: auto;
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     text-align: right;
-    margin-top: 35%;
+    margin-top: 40%;
     padding: 2rem;
     font-size: 8vw;
     font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
@@ -532,7 +532,7 @@ li a {
   margin: auto; 
 }
 
-#modal-content1 h5 {
+#modal-content1 h1 {
   width: 100%;
   height: auto;
   text-align: center;
