@@ -70,7 +70,7 @@ body {
 
   header ul {
     min-width: 130%;
-    height: 25vw;
+    height: 20vw;
     transform: translate(-30%, -30%); /* Center the text both horizontally and vertically */
     text-align: right;
     font-size: 3vw;
