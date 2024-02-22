@@ -120,7 +120,7 @@ body {
 /* CHESSBOARD */
 nav {
   position: absolute;
-  top: 45rem;
+  top: 100vh;
   background-color: #FFF;
   width: 100%;
 }
