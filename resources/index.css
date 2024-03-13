@@ -355,10 +355,6 @@ li a {
   font-style: bold;
 }
 
-.text-container {
-  flex-grow: 1; /* Allow the text container to grow and take remaining space */
-  padding: 20px; /* Add padding for spacing */
-}
 
 /* MODAL SECTION 2 */
 
