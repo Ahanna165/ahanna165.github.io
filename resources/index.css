@@ -339,7 +339,7 @@ li a {
   height: auto; /* Automatically adjust the height based on width */
   position: absolute; /* Position the image relative to the container */
   top: 65px; /* Position from the top edge of the container */
-  left: 0; /* Position from the left edge of the container */
+  left: 2rem; /* Position from the left edge of the container */
   bottom: 0; /* Position from the bottom edge of the container */
   right: 0; /* Position from the right edge of the container */
   margin: auto; 
