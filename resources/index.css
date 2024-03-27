@@ -355,6 +355,16 @@ li a {
   font-style: bold;
 }
 
+#modal-content1 h2 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: grey; /* Set the text color */
+  font-style: italic;
+}
+
 
 /* MODAL SECTION 2 */
 
