@@ -333,13 +333,13 @@ li a {
 }
 
 #modal-content1 img {
-  max-width: 80%; /* Ensure the image doesn't exceed the container width */
+  max-width: 90%; /* Ensure the image doesn't exceed the container width */
   max-height: 60%; /* Ensure the image doesn't exceed the container height */
   width: auto; /* Automatically adjust the width based on height */
   height: auto; /* Automatically adjust the height based on width */
   position: absolute; /* Position the image relative to the container */
   top: 65px; /* Position from the top edge of the container */
-  left: 2rem; /* Position from the left edge of the container */
+  left: 0; /* Position from the left edge of the container */
   bottom: 0; /* Position from the bottom edge of the container */
   right: 0; /* Position from the right edge of the container */
   margin: auto; 
