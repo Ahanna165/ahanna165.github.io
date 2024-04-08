@@ -449,7 +449,7 @@ li a {
 }
 
 #modal-content3 img {
-  max-width: 90%; /* Ensure the image doesn't exceed the container width */
+  max-width: 80%; /* Ensure the image doesn't exceed the container width */
   max-height: 70%; /* Ensure the image doesn't exceed the container height */
   width: auto; /* Automatically adjust the width based on height */
   height: auto; /* Automatically adjust the height based on width */
