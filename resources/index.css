@@ -529,6 +529,8 @@ li a {
   font-style: bold;
 }
 
+/* MODAL SECTION5 */
+
 #bg-modal5 {
   width: 100%;
   height: 100%;
@@ -584,6 +586,53 @@ li a {
   font-style: italic;
 }
 
+/* MODAL SECTION6 */
+
+#bg-modal6 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+#modal-content6 {
+  width: 80%;
+  height: 90%;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  
+}
+
+#modal-content6 img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container width */
+  max-height: 80%; /* Ensure the image doesn't exceed the container height */
+  width: auto; /* Automatically adjust the width based on height */
+  height: auto; /* Automatically adjust the height based on width */
+  position: absolute; /* Position the image relative to the container */
+  top: 55px; /* Position from the top edge of the container */
+  left: 0; /* Position from the left edge of the container */
+  bottom: 0; /* Position from the bottom edge of the container */
+  right: 0; /* Position from the right edge of the container */
+  margin: auto; 
+}
+
+#modal-content6 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Orbitron, Georgia, 'Times New Roman', Times, serif;
+  color: magenta; /* Set the text color */
+  font-style: bold;
+}
+
 .close1 {
   position: absolute;
   top: 14px;
@@ -610,6 +659,14 @@ li a {
 }
 
 .close4 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.close5 {
   position: absolute;
   top: 14px;
   right: 14px;
