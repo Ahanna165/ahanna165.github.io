@@ -329,7 +329,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 5;
 }
 
 #modal-content1 img {
@@ -343,6 +343,7 @@ li a {
   bottom: 0; /* Position from the bottom edge of the container */
   right: 0; /* Position from the right edge of the container */
   margin: auto; 
+  z-index: 6;
 }
 
 #modal-content1 h1 {
