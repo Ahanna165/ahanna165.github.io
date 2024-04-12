@@ -319,7 +319,7 @@ li a {
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 4;
 }
 
 #modal-content1 {
