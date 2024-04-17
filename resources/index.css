@@ -314,12 +314,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  z-index: 4;
+  z-index: 9990;
 }
 
 #modal-content1 {
@@ -329,7 +329,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  z-index: 5;
+  z-index: 9999;
 }
 
 #modal-content1 img {
@@ -373,12 +373,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content2 {
@@ -388,7 +388,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 #modal-content2 img {
@@ -431,12 +431,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content3 {
@@ -446,7 +446,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 #modal-content3 img {
@@ -489,12 +489,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content4 {
@@ -504,7 +504,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 #modal-content4 img {
@@ -536,12 +536,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content5 {
@@ -551,7 +551,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 #modal-content5 img {
@@ -593,12 +593,12 @@ li a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content6 {
@@ -608,7 +608,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 #modal-content6 img {
@@ -676,6 +676,7 @@ li a {
   right: 14px;
   font-size: 1rem;
   cursor:pointer;
+  border: 2px solid blue;
 }
 
 
