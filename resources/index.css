@@ -645,7 +645,7 @@ li a {
   justify-content: center;
   align-items: center;
   display: none;
-  
+  z-index: 9990;
 }
 
 #modal-content7 {
@@ -655,7 +655,7 @@ li a {
   color: black;
   border-radius: 15px;
   position: relative;
-  
+  z-index: 9999;
 }
 
 
