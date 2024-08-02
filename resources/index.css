@@ -483,9 +483,9 @@ li a {
 }
 
 
-/* MODAL SECTION4 */
+/* MODAL SECTION7 */
 
-#bg-modal4 {
+#bg-modal7 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -497,7 +497,7 @@ li a {
   z-index: 9990;
 }
 
-#modal-content4 {
+#modal-content7 {
   width: 80%;
   height: 90%;
   background-color: #ffffff;
@@ -507,7 +507,7 @@ li a {
   z-index: 9999;
 }
 
-#modal-content4 img {
+#modal-content7 img {
   max-width: 80%; /* Ensure the image doesn't exceed the container width */
   max-height: 80%; /* Ensure the image doesn't exceed the container height */
   width: auto; /* Automatically adjust the width based on height */
@@ -520,7 +520,7 @@ li a {
   margin: auto; 
 }
 
-#modal-content4 h1 {
+#modal-content7 h1 {
   width: 100%;
   height: auto;
   text-align: center;
@@ -634,9 +634,9 @@ li a {
   font-style: bold;
 }
 
-/* MODAL SECTION7 */
+/* MODAL SECTION4 */
 
-#bg-modal7 {
+#bg-modal4 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -648,7 +648,7 @@ li a {
   z-index: 9990;
 }
 
-#modal-content7 {
+#modal-content4 {
   width: 80%;
   height: 90%;
   background-color: #ffffff;
@@ -659,7 +659,7 @@ li a {
 }
 
 
-#modal-content7 h1 {
+#modal-content4 h1 {
   width: 100%;
   height: auto;
   text-align: center;
