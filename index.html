@@ -179,7 +179,7 @@
       <img src="./resources/images/Screenshot 2024-04-08 at 22.36.52.png" alt="E-commerce data project with pandas">
     </a>
   </div>
-</div> -->
+</div> 
 
 <div id="bg-modal1" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0; justify-content: center; align-items: center; display: none; z-index: 9990;">
   <div id="modal-content1" style="width: 80%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999;">
@@ -201,7 +201,47 @@
   document.querySelector('.close1').addEventListener('click', function() {
       document.querySelector('#bg-modal1').style.display = 'none';
   });
+</script> -->
+
+  <!-- MODAL CONTAINER -->
+<div id="bg-modal1" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0; justify-content: center; align-items: center; display: none; z-index: 9990;">
+  <div id="modal-content1" style="width: 90%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box;">
+    
+    <div class="close1" style="align-self: flex-end; cursor: pointer; font-weight: bold; font-size: 1.2rem; color: magenta;">✕ close</div>
+
+    <h1 style="text-align: center; font-size: 2rem; font-family: Orbitron, sans-serif; color: magenta; font-weight: bold;">
+      <br><strong>Levenshtein Distance</strong><br>
+    </h1>
+    <h2 style="text-align: center; font-size: 1rem; font-family: Orbitron, sans-serif; color: grey; font-style: italic;">
+      Slide through the carousel to explore how fuzzy matching can power product classification.
+    </h2>
+
+    <!-- EMBEDDED CAROUSEL FROM CANVA (replace src with your real embed link) -->
+    <iframe 
+      src="https://www.canva.com/design/DAGm9hMR5rc/qLnhKIzjMrYXQBLijl4Dng/view" 
+      width="100%" 
+      height="100%" 
+      style="border: none; flex-grow: 1;" 
+      allowfullscreen="true" 
+      loading="lazy">
+    </iframe>
+
+  </div>
+</div>
+
+<!-- TRIGGER + CLOSE SCRIPT -->
+<script>
+  // Show modal
+  document.getElementById('field1').addEventListener('click', function() {
+    document.querySelector('#bg-modal1').style.display = 'flex';
+  });
+
+  // Hide modal
+  document.querySelector('.close1').addEventListener('click', function() {
+    document.querySelector('#bg-modal1').style.display = 'none';
+  });
 </script>
+
 
 
 
