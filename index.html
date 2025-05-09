@@ -205,7 +205,7 @@
 
 <!-- MODAL CONTAINER -->
 <div id="bg-modal1" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0; justify-content: center; align-items: center; display: none; z-index: 9990;">
-  <div id="modal-content1" style="width: 90%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box; overflow: hidden;">
+  <div id="modal-content1" style="width: 90%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box;">
     
     <div class="close1" style="align-self: flex-end; cursor: pointer; font-weight: bold; font-size: 1.2rem; color: magenta;">✕ close</div>
 
@@ -213,62 +213,35 @@
       <br><strong>Levenshtein Distance</strong><br>
     </h1>
     <h2 style="text-align: center; font-size: 1rem; font-family: Orbitron, sans-serif; color: grey; font-style: italic;">
-      Slide through the carousel to explore how fuzzy matching can power product classification.
+      Slide through to explore how fuzzy matching can power product classification.
     </h2>
 
-    <!-- CAROUSEL -->
-    <div id="carousel" style="flex-grow: 1; display: flex; justify-content: center; align-items: center; position: relative;">
-      <img id="carousel-img" src="image1.jpg" alt="Slide 1" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
-      
-      <!-- Prev/Next buttons -->
-      <button onclick="prevSlide()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: magenta; color: white; border: none; border-radius: 50%; width: 40px; height: 40px;">‹</button>
-      <button onclick="nextSlide()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: magenta; color: white; border: none; border-radius: 50%; width: 40px; height: 40px;">›</button>
-    </div>
+    <!-- EMBEDDED CAROUSEL FROM CANVA (replace src with your real embed link) -->
+    <iframe 
+      src="https://levensteineclass.my.canva.site" 
+      width="100%" 
+      height="100%" 
+      style="border: none; flex-grow: 1;" 
+      allowfullscreen="true" 
+      loading="lazy">
+    </iframe>
 
   </div>
 </div>
 
-<!-- SCRIPT -->
+<!-- TRIGGER + CLOSE SCRIPT -->
 <script>
-  const images = ['./resources/images/1.png', './resources/images/2.png', './resources/images/3.png', './resources/images/4.png', './resources/images/5.png', './resources/images/6.png']; // Replace with your real image file names
-  let current = 0;
-  let autoplayInterval;
-
-  function showSlide(index) {
-    document.getElementById('carousel-img').src = images[index];
-  }
-
-  function nextSlide() {
-    current = (current + 1) % images.length;
-    showSlide(current);
-  }
-
-  function prevSlide() {
-    current = (current - 1 + images.length) % images.length;
-    showSlide(current);
-  }
-
-  function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 3000); // every 3 seconds
-  }
-
-  function stopAutoplay() {
-    clearInterval(autoplayInterval);
-  }
-
   // Show modal
   document.getElementById('field1').addEventListener('click', function() {
     document.querySelector('#bg-modal1').style.display = 'flex';
-    startAutoplay();
   });
 
   // Hide modal
   document.querySelector('.close1').addEventListener('click', function() {
     document.querySelector('#bg-modal1').style.display = 'none';
-    stopAutoplay();
   });
 </script>
-
+  
 <!-- Modal Section 2 Seaborn-->
 <div id="bg-modal2">
   <div id="modal-content2">
