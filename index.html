@@ -203,9 +203,9 @@
   });
 </script> -->
 
-  <!-- MODAL CONTAINER -->
+<!-- MODAL CONTAINER -->
 <div id="bg-modal1" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0; justify-content: center; align-items: center; display: none; z-index: 9990;">
-  <div id="modal-content1" style="width: 90%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box;">
+  <div id="modal-content1" style="width: 90%; height: 90%; background-color: #ffffff; color: black; border-radius: 15px; position: relative; z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box; overflow: hidden;">
     
     <div class="close1" style="align-self: flex-end; cursor: pointer; font-weight: bold; font-size: 1.2rem; color: magenta;">✕ close</div>
 
@@ -216,34 +216,58 @@
       Slide through the carousel to explore how fuzzy matching can power product classification.
     </h2>
 
-    <!-- EMBEDDED CAROUSEL FROM CANVA (replace src with your real embed link) -->
-    <iframe 
-      src="https://www.canva.com/design/DAGm9hMR5rc/qLnhKIzjMrYXQBLijl4Dng/view?utm_content=DAGm9hMR5rc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd2e3004f7d" 
-      width="100%" 
-      height="100%" 
-      style="border: none; flex-grow: 1;" 
-      allowfullscreen="true" 
-      loading="lazy">
-    </iframe>
+    <!-- CAROUSEL -->
+    <div id="carousel" style="flex-grow: 1; display: flex; justify-content: center; align-items: center; position: relative;">
+      <img id="carousel-img" src="image1.jpg" alt="Slide 1" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
+      
+      <!-- Prev/Next buttons -->
+      <button onclick="prevSlide()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: magenta; color: white; border: none; border-radius: 50%; width: 40px; height: 40px;">‹</button>
+      <button onclick="nextSlide()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: magenta; color: white; border: none; border-radius: 50%; width: 40px; height: 40px;">›</button>
+    </div>
 
   </div>
 </div>
 
-<!-- TRIGGER + CLOSE SCRIPT -->
+<!-- SCRIPT -->
 <script>
+  const images = ['images/1.png', 'images/2.png', 'images/3.png', 'images/4.png', 'images/5.png', 'images/6.png']; // Replace with your real image file names
+  let current = 0;
+  let autoplayInterval;
+
+  function showSlide(index) {
+    document.getElementById('carousel-img').src = images[index];
+  }
+
+  function nextSlide() {
+    current = (current + 1) % images.length;
+    showSlide(current);
+  }
+
+  function prevSlide() {
+    current = (current - 1 + images.length) % images.length;
+    showSlide(current);
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, 3000); // every 3 seconds
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
   // Show modal
   document.getElementById('field1').addEventListener('click', function() {
     document.querySelector('#bg-modal1').style.display = 'flex';
+    startAutoplay();
   });
 
   // Hide modal
   document.querySelector('.close1').addEventListener('click', function() {
     document.querySelector('#bg-modal1').style.display = 'none';
+    stopAutoplay();
   });
 </script>
-
-
-
 
 <!-- Modal Section 2 Seaborn-->
 <div id="bg-modal2">
