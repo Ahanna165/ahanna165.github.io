@@ -28,10 +28,10 @@ body {
 
 
 .hanna {
-  width: 40%;
+  width: 120%;
   height: auto;
   position: fixed;
-  bottom: 0;
+  bottom: 30;
   left: 0;
   overflow: hidden;
 }
