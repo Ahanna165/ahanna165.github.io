@@ -17,7 +17,7 @@ body {
 }
 
 
-/* 
+/* BANNER */
 .banner {
   position: fixed;
   height: auto;
@@ -28,7 +28,7 @@ body {
 
 
 .hanna {
-  width: 120%;
+  width: 220%;
   height: auto;
   position: fixed;
   bottom: 30;
@@ -37,33 +37,14 @@ body {
 }
  .hanna img {
     height: auto;
-    width:120%;
+    width:220%;
     padding-left: 0%;
     padding-bottom: 30%;
     object-fit: cover;
     opacity: 0.5;
-  }*/
+  }
 
-/* BANNER */
-.banner {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    overflow: hidden;
-}
 
-.hanna {
-    width: 200%;
-    height: 200%;
-}
-
-.hanna img {
-    width: 200%;
-    height: 200%;
-    object-fit: contain;
-    object-position: center top;
-    opacity: 0.5;
-}
 
   header {
     position: absolute; /* Set the parent container to relative positioning */
