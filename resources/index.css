@@ -28,7 +28,7 @@ body {
 
 
 .hanna {
-  width: 220%;
+  width: 120%;
   height: auto;
   position: fixed;
   bottom: 30;
@@ -37,7 +37,7 @@ body {
 }
  .hanna img {
     height: auto;
-    width:220%;
+    width:120%;
     padding-left: 0%;
     padding-bottom: 30%;
     object-fit: cover;
