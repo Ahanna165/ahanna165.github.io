@@ -21,14 +21,14 @@ body {
 .banner {
   position: fixed;
   height: auto;
-  width: 100%;
+  width: 90%;
   margin-right: 0;
   display: flex;
 }
 
 
 .hanna {
-  width: 100%;
+  width: 90%;
   height: auto;
   position: fixed;
   bottom: 30;
@@ -37,7 +37,7 @@ body {
 }
  .hanna img {
     height: auto;
-    width:100%;
+    width:90%;
     padding-left: 0%;
     padding-bottom: 30%;
     object-fit: cover;
