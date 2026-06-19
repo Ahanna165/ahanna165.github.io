@@ -20,24 +20,24 @@ body {
 /* BANNER */
 .banner {
   position: fixed;
-  height: auto;
-  width: 70%;
+  height: 100%;
+  width: auto;
   margin-right: 0;
   display: flex;
 }
 
 
 .hanna {
-  width: 70%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position: fixed;
   bottom: 30;
   left: 0;
   overflow: hidden;
 }
  .hanna img {
-    height: auto;
-    width:70%;
+    height: 100%;
+    width:auto;
     padding-left: 0%;
     padding-bottom: 30%;
     object-fit: cover;
