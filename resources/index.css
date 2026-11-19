@@ -36,12 +36,12 @@ body {
   overflow: hidden;
 }
  .hanna img {
-    height: 100%;
-    width:auto;
+    height: auto;
+    width:100%;
     padding-left: 0%;
-    padding-bottom: 30%;
+    padding-bottom: 0%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
 
